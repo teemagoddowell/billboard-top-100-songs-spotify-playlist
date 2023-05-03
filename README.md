@@ -1,7 +1,7 @@
 # billboard-top-100-songs-spotify-playlist
 
 The script ask the users for a date (format: YYYY-MM-DD) </br>
-It then scrapes through Billboard Top 100 chart for that week (based on the users input) and Create a new Spotify Playlist adding each of the songs to your Spotify Playlist.
+It then scrapes through Billboard Top 100 chart for that week (based on the users input) and Creates a new Spotify Playlist adding each of the songs to your Spotify Playlist.
 
 <b>Requirements:</b>
 - Create Spotify Account
