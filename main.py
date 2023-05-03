@@ -29,16 +29,13 @@ response = requests.get(URL)
 data = response.text
 soup = BeautifulSoup(data, "html.parser")
 top_100_songs = soup.select(selector="li h3", class_="c-title")
-song_list = []
-song_url = []
 
 # Top 100 Songs List
-for song in top_100_songs:
-    song_list.append(song.getText().strip())
-    if len(song_list) > 99:
-        break
+song_list = []
+song_lists = [song_list.append(song.getText().strip()) for song in top_100_songs if len(song_list) < 100]
 
 # Search for songs on Spotify
+song_url = []
 for song in song_list:
     result = sp.search(q=f"track:{song}", type="track")
     try:
